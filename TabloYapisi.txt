@@ -1,0 +1,40 @@
+ 
+
+! Kişinin gerçekleştirdiği proje bilgisi gerekli mi?
+! Department ile Field Alanı değiştirilebilir.!!!
+
+-Field Tablo olarak değiştirilecek.....
+-Kişilerin sertifikaları m - m 
+-certifika field m - m 
+
+++
+
+Gerçek Otel personel bilgisi calısılacak. Job Title vs.
+++
+
+!Departmant tablosu koyulacak. Departmanlar arası hiyerarşi ayarlanacak.
+
+
+
+
+						Person:
+PERSON			    |  Personnel  |  WORK HISTORY  | CERTIFICATE |  EDUCATION    |  JOBS          | Job list 			| TALENTS         	         | 	   TALENTS CATEGORIES                              | Excuses        | Department                 | Companies |   | PROJECT | EVENT |  TASK        
+																																																			
+
+-FirstName	 	     			                     Name      		CollegeName 			      	Name			   Name                             Name                                        		StartDate		  Name						Name
+-LastName        -Status (Active!)   Position        Provider      	Major			StartDate       Description		   Description                      Description                                         EndDate           Manager(PersonnelId) 		Address
+-E-mail          		     		 CompanyName     StartDate      StartDate		Work Location   Field			   PersonnelId                      Field ENUM(Sağlık,Ulaşım,temizlik,iletişim vs.)     PersonnelId       ParentDepartment   	    Phone Number
+-Picture              			     StartDate       EndDate      	EndDate			JobsId              			   TALENTS CATEGORIESId                                                                 Description       CompanyId                 E-mail                                          
+-Description         			     EndDate         Field ENUM !!! GPA				PersonnelId             		   expertness level (1-10)                                                              	                                        Web
+-Phone Number        			     salary          PersonnelId    PersonnelId		EndDate	      									                                                                               					 				    Parent Company
+-Birth Date          			     PersonnelId                     							                                                                                                       		     
+- Gender																			             			                                        
+- Location           			                                        
+-Assignment
+-Address	          			                                        
+  			                                        
+             			                                        
+	
+
+
+
