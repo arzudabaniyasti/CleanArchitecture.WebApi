@@ -7,11 +7,8 @@
 
   <ItemGroup>
     <Compile Remove="Features\Films\Queries\NewFolder\**" />
-    <Compile Remove="Features\NewFolder\**" />
     <EmbeddedResource Remove="Features\Films\Queries\NewFolder\**" />
-    <EmbeddedResource Remove="Features\NewFolder\**" />
     <None Remove="Features\Films\Queries\NewFolder\**" />
-    <None Remove="Features\NewFolder\**" />
   </ItemGroup>
 
   <ItemGroup>
