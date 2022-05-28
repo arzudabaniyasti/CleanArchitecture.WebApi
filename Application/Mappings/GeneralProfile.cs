@@ -44,6 +44,14 @@ using Application.Features.Announcements.Queries.GetAllAnnouncements;
 using Application.Features.Announcements.Commands.UpdateAnnouncement;
 using Application.Features.Films.Queries.GetAllFilms;
 using Application.Features.Films.Commands.CreateFilm;
+using Application.Features.Diaries.Commands.CreateDiaries;
+using Application.Features.Diaries.Queries.GetAllDiaries;
+using Application.Features.Searches.Queries.GetAllSearches;
+using Application.Features.Searches.Commands.CreateSearch;
+using Application.Features.WatchedLists.Queries.GetAllWatchedLists;
+using Application.Features.WatchedLists.Commands.CreateWatchedList;
+using Application.Features.WatchLists.Queries.GetAllWatchLists;
+using Application.Features.WatchLists.Commands.CreateWatchList;
 
 namespace Application.Mappings
 {
@@ -89,10 +97,6 @@ namespace Application.Mappings
             CreateMap<UpdateEducationCommand, Education>();
             CreateMap<GetAllEducationsQuery, GetAllEventsParameter>();
 
-  
-            CreateMap<CreateFilmCommand, Film>();
-         
-
             CreateMap<Event, GetAllEventsViewModel>().ReverseMap();
             CreateMap<CreateEventCommand, Event>();
             CreateMap<UpdateEventCommand, Event>();
@@ -112,6 +116,28 @@ namespace Application.Mappings
             CreateMap<CreateContactCommand, Contact>();
             CreateMap<UpdateContactCommand, Contact>();
             CreateMap<GetAllContactsQuery, GetAllContactsParameter>();
+
+            CreateMap<Diary, GetAllDiariesViewModel>();
+            CreateMap<CreateDiaryCommand, Diary>();
+            CreateMap<GetAllDiariesQuery, GetAllDiariesParameter>();
+
+            CreateMap<Film, GetAllFilmsViewModel>();
+            CreateMap<CreateFilmCommand, Film>();
+            CreateMap<GetAllFilmsQuery, GetAllFilmsParameter>();
+
+            CreateMap<Search, GetAllSearchesViewModel>();
+            CreateMap<CreateSearchCommand, Search>();
+            CreateMap<GetAllSearchesQuery, GetAllSearchesParameter>();
+
+            CreateMap<WatchedList, GetAllWatchedListsViewModel>();
+            CreateMap<CreateWatchedListCommand, WatchedList>();
+            CreateMap<GetAllWatchedListsQuery, GetAllWatchedListsParameter>();
+
+            CreateMap<WatchList, GetAllWatchListsViewModel>();
+            CreateMap<CreateWatchListCommand, WatchList>();
+            CreateMap<GetAllWatchListsQuery, GetAllWatchListsParameter>();
+
+
 
         }
     }

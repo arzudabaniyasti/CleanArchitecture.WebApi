@@ -46,6 +46,13 @@ namespace Infrastructure.Persistence
             services.AddTransient<IInventoryRepositoryAsync, InventoryRepositoryAsync>();
             services.AddTransient<IEventRepositoryAsync, EventRepositoryAsync>();
 
+            services.AddTransient<ISearchRepositoryAsync, SearchRepositoryAsync>();
+            services.AddTransient<IDiaryRepositoryAsync, DiaryRepositoryAsync>();
+            services.AddTransient<IWatchListRepositoryAsync, WatchListRepositoryAsync>();
+            services.AddTransient<IWatchedListRepositoryAsync, WatchedListRepositoryAsync>();
+            services.AddTransient<IFilmmRepositoryAsync, FilmRepositoryAsync>();
+
+
             #endregion
         }
     }

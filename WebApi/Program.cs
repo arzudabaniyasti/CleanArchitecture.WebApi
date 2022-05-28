@@ -54,6 +54,11 @@ namespace WebApi
                     var filmRepository = services.GetRequiredService<IFilmmRepositoryAsync>();
                     var projectRepository = services.GetRequiredService<IProjectRepositoryAsync>();
 
+                    var searchRepository = services.GetRequiredService<ISearchRepositoryAsync>();
+                    var watchedListRepository = services.GetRequiredService<IWatchedListRepositoryAsync>();
+                    var watchListproductRepository = services.GetRequiredService<IWatchListRepositoryAsync>();
+                    var diaryRepository = services.GetRequiredService<IDiaryRepositoryAsync>();
+
                     var contactRepository = services.GetRequiredService<IContactRepositoryAsync>();
 
                     var announcementRepository = services.GetRequiredService<IAnnouncementRepositoryAsync>();
@@ -74,6 +79,12 @@ namespace WebApi
                     await Infrastructure.Persistence.Seeds.DefaultAnnouncements.SeedAsync(announcementRepository);
                     await Infrastructure.Persistence.Seeds.DefaultPersonnels.SeedAsync(personnelRepository);
                     await Infrastructure.Persistence.Seeds.DefaultProducts.SeedAsync(productRepository);
+
+                    await Infrastructure.Persistence.Seeds.DefaultSearches.SeedAsync(searchRepository);
+                    await Infrastructure.Persistence.Seeds.DefaultWatchedLists.SeedAsync(watchedListRepository);
+                    await Infrastructure.Persistence.Seeds.DefaultWatchLists.SeedAsync(watchListproductRepository);
+                    await Infrastructure.Persistence.Seeds.DefaultDiaries.SeedAsync(diaryRepository);
+
                     await Infrastructure.Persistence.Seeds.DefaultInventories.SeedAsync(inventoryRepository, productRepository);
                     //await Infrastructure.Persistence.Seeds.DefaultEvents.SeedAsync(eventRepository, personnelRepository,addressRepository);
 

@@ -27,7 +27,9 @@ namespace WebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddApplicationLayer();
-            services.AddScoped(typeof(IFilmmRepositoryAsync), typeof(FilmRepositoryAsync));
+
+       
+
             services.AddIdentityInfrastructure(_config);
             services.AddPersistenceInfrastructure(_config);
             services.AddSharedInfrastructure(_config);

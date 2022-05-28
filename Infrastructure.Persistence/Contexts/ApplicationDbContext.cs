@@ -36,6 +36,10 @@ namespace Infrastructure.Persistence.Contexts
         public DbSet<Inventory> Inventories { get; set; }
         public DbSet<Event> Events { get; set; }
         public DbSet<Film> Films { get; set; }
+        public DbSet<Search> Searches { get; set; }
+        public DbSet<WatchedList> WatchedLists { get; set; }
+        public DbSet<WatchList> WatchLists { get; set; }
+        public DbSet<Diary> Diaries { get; set; }
 
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
         {
